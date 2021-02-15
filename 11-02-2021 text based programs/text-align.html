@@ -1,0 +1,87 @@
+<!-- There are 6 property values. They are left, right, center, justify, initial and inherit 
+Justify: Stretches the line so that each line has equal width   (resize the browser window to see how justify works  ),
+Initial : Sets property to default value (even though h1 is declared inside div, still it color does not change to red  )  Inherit : It inherits the properties from its parent(try to change the color of div element in line 66)
+Text align last : Used to change the last element in the div tag   TO apply only to last paragraph in the container, we can use last child element as shown in the line 43 -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text-align</title>
+	<style type="text/css">
+		span{
+			color:blue;
+			border:1px solid black;
+		}
+		.extra span{
+			color:inherit;
+		}
+		.a{
+			text-align: center;
+		}
+		.b{
+			text-align: left;
+		}
+		.c{
+			text-align: right;
+		}
+		.d{
+			text-align: top;
+		}
+		.e{
+			text-align: bottom;
+		}
+		.f{
+			text-align: justify;
+			color: red;
+		}
+		h1{
+			color: initial;
+		}
+		.l{
+			text-align-last: justify;
+		}
+		.l p:last-child{
+			text-align-last: right;
+		}
+	</style>
+</head>
+<body>
+	<div class="a">
+		<p> Some random text </p>
+	</div>
+	<div class="b">
+		<p> Some random text </p>
+	</div>
+	<div class="c">
+		<p> Some random text </p>
+	</div>
+	<div class="d">
+		<p> Some random text </p>
+	</div>
+	<div class="e">
+		<p> Some random text </p>
+	</div>
+	<div class="f">
+		<h1> this is about initial </h1>
+		<p> Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text</p>
+	</div>
+
+	<div>
+		<p>  Here is <span>a span element</span> which is blue, as span elements are set to be.</p>
+	</div>
+
+	<div class="extra" style="color:green">
+ Here is <span>a span element</span> which is green, because it inherits from its parent.
+	</div>
+
+	<div style="color:red">
+	 Here is <span>a span element</span> which is blue, as span elements are set to be.
+	</div>
+
+	<div class="l"> 
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+</div>
+</body>
+</html>

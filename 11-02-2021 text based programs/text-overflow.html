@@ -1,0 +1,21 @@
+<!-- For text-overflow white-space and overflow are required.  If we avoid overflow, the text will be seen as we move the browser in the right direction.  Ellipsis means 3dots (...)    We can use hover to see all the text when we set overflow to visible -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Text-Overflow</title>
+	<style type="text/css">
+		.p2{
+			white-space: nowrap;
+  			overflow: hidden;
+  			text-overflow: ellipsis  /* we can also use clip instead of ellipsis  */;
+		}
+		.p2:hover{
+			overflow: visible;
+		}
+	</style>
+</head>
+<body>
+	<p class="p2"> Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text</p>.
+</body>
+</html>

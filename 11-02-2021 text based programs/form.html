@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Form</title>
+	<style type="text/css">
+		#button{
+			margin-left: 60px;
+			background-color: green;
+		}
+		body{
+			text-align: center;
+			background-color: lightblue;
+		}
+		h1{
+			margin-top: 40px;
+		}
+		.y{
+			background-color: red;
+			margin-left: 500px;
+			margin-right: 500px;
+		}
+	</style>
+</head>
+<body>
+	<div class="x">
+	<h1> Please provide your details </h1>
+	<br>
+	<form action="#">
+	Name: <input id="name" type="text" name="name" required>
+	<br><br>
+	Gender : <label> 
+		<input id="male" type="radio" name="gender" checked> Male 
+	</label> 
+	<label>
+		<input id="female" type="radio" name="gender"> Female
+	</label>
+	<br><br>
+	Check all that apply: <label>
+		<input id="height" type="checkbox" name="heightweight" checked> Above 6 feet 
+	</label>
+
+	<input id="weight" type="checkbox" name="heightweight"> Over 200 pounds
+	</label>
+	<br><br>
+	<label> Choose your eye color </label>
+	<select id="eyecolor">
+	<option id="Blue"> Blue</option> 
+	<option id="Brown"> Brown</option> 
+	<option id="Green"> Green</option>
+	</select>
+	<br><br>
+
+	Hobbies
+	<textarea id="details" type="textarea" rows="4" columns="20" name="hobbies" placeholder="Enter your hobbies"></textarea> <br><br>
+
+	<button id= "button" type="submit"> Submit </button>
+
+	</form>
+	</div>
+	<br><br><hr>
+	<div class="y">
+	<p> <b> Note: </b> This form does not ask your valuable information like credit card details.</p>
+	</div>
+</body>
+</html>

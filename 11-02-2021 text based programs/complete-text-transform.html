@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Complete text and transform</title>
+	<style type="text/css">
+		/* Text-align  styles  */
+		span{
+			color:blue;
+			border:1px solid black;
+		}
+		.extra span{
+			color:inherit;
+		}
+		.a{
+			text-align: center;
+		}
+		.b{
+			text-align: left;
+		}
+		.c{
+			text-align: right;
+		}
+		.d{
+			text-align: top;
+		}
+		.e{
+			text-align: bottom;
+		}
+		.f{
+			text-align: justify;
+			color: red;
+		}
+		h1{
+			color: initial;
+		}
+		.l{
+			text-align-last: justify;
+		}
+		.l p:last-child{
+			text-align-last: right;
+		}
+		/* Text- decoration styles  */
+		.a2{
+			text-decoration: overline;
+			text-decoration-color: red;
+			text-decoration-style: dotted; 
+		}
+		.b2{
+			text-decoration: underline;
+			text-decoration-style: wavy;
+		}
+		.c2{
+			text-decoration: underline overline; 
+			text-decoration-style: double; 
+		}
+		.d2{
+			text-decoration: line-through;
+		}
+		/* Text- indent */
+		.a1{
+			text-indent: 50px;
+		}
+		.b1{
+			text-indent: -2em;
+		}
+		.c1{
+			text-indent: 60%;
+		}
+		/* Text- justify */
+		.p1{
+			text-align: justify;
+			text-justify: inter-word;
+		}
+		/* Text-overflow  */
+		.p2{
+			white-space: nowrap;
+  			overflow: hidden;
+  			text-overflow: ellipsis  /* we can also use clip instead of ellipsis  */;
+		}
+		.p2:hover{
+			overflow: visible;
+		} 
+		/* text - shadow */
+		.p3{
+			color: red;
+			text-shadow: 2px 2px;
+		}
+		/* Text transform */
+		.u{
+			text-transform: uppercase;
+		}
+		.l{
+			text-transform: lowercase;
+		}
+		.c{
+			text-transform: capitalize;
+		}
+		/* transform - property */
+		.a4{
+			height:80px;
+			width: 150px;
+			background-color: yellow;
+			transform: rotate(20deg);   
+		}
+		.b4{
+			height: 80px;
+			width:150px;
+			background-color: yellow;
+			transform: skewX(20deg);
+		}
+		.c4{
+			height: 80px;
+			width:150px;
+			background-color: yellow;
+			transform: scaleX(1.5);
+		}
+	</style>
+</head>
+<body> 
+	<!-- Text-align  -->
+	<br>
+	<div>
+		<div class="a">
+		<p> Some random text </p>
+	</div>
+	<div class="b">
+		<p> Some random text </p>
+	</div>
+	<div class="c">
+		<p> Some random text </p>
+	</div>
+	<div class="d">
+		<p> Some random text </p>
+	</div>
+	<div class="e">
+		<p> Some random text </p>
+	</div>
+	<div class="f">
+		<h1> this is about initial </h1>
+		<p> Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text</p>
+	</div>
+	<div>
+		<p>  Here is <span>a span element</span> which is blue, as span elements are set to be.</p>
+	</div>
+
+	<div class="extra" style="color:green">
+ Here is <span>a span element</span> which is green, because it inherits from its parent.
+	</div>
+
+	<div style="color:red">
+	 Here is <span>a span element</span> which is blue, as span elements are set to be.
+	</div>
+
+	<div class="l"> 
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+		<p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut.</p>
+</div>
+	</div>
+	<br><br>
+	<hr>
+
+	<!-- Text-decoration  -->
+	<div>
+		<p class="a2"> This is first paragraph </p>.
+		<p class="b2"> This is second paragraph </p>.
+		<p class="c2"> This is third paragraph </p>.
+		<p class="d2"> This is fourth paragraph </p>.
+	</div>
+	<br><br><hr>
+	<!-- Text- indent  -->
+	<div>
+		<div class="a1">
+		<p> Some random text Some random text Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text.</p>
+	</div>
+	<div class="b1">
+		<p> Some random text Some random text Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text.</p>
+	</div>
+	<div class="c1">
+		<p> Some random text Some random text Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text.</p>
+	</div>
+	</div> <br><hr>
+	<!--  Text- justify -->
+	<div>
+		<p class="p1"> Some random text Some random textSome random textSome random textvSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text </p>.
+	</div><br><hr>
+	<!--Text- overflow -->
+	<div>
+	<p class="p2"> Some random text Some random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random textSome random text</p>.
+	</div><br><hr>
+	<!-- Text shadow -->
+	<div>
+		<p class="p3"> Some random text. Some random text.Some random text.Some random text.Some random text. </p>
+	</div> <br><hr>
+	<!-- Text transform -->
+	<div>
+	<p class="u"> this will be converted to uppercase </p>
+	<p class="l"> this text will be converted to lowercase
+	</p>
+	<p class="c"> this text will be captilised </p>
+	</div> <br> <hr>
+	<!-- Transform property -->
+	<div>
+		<div class="a4"> something </div>
+	<br>
+	<div class="b4"> nothing </div>
+	<br>
+	<div class="c4"> anything </div>
+	</div>
+</body>
+</html>
