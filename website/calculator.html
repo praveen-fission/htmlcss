@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		*{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		body{
+			background-image: url(backyimageforwebsite1.jpg);
+			background-size: cover;
+			background-position: center;
+			font-family: sans-serif;
+			}
+		.secondhead{
+			margin-top: 20px;
+			text-align: center;
+			font-size: 30px;
+			font-style: sans-serif;
+		}
+		.para1{
+			margin-top: 20px;
+			margin-left: 20px;
+			margin-right: 20px;
+			text-align: center;
+			font-size: 20px;
+			font-style: sans-serif;
+		}
+		.calculate{
+			margin-top: 20px;
+			text-align: center;
+			font-style: sans-serif;
+		}
+		#calculator{
+			margin-top: 10px;
+			width: 320px;
+			height: 500px;
+			background-color: #eaedef;
+			margin-left: 600px;
+			position: relative;
+			border-radius: 20px;
+		}
+		/*.operator{
+			margin-top: 160px;
+		}*/
+		.operator,.number, .empty{
+			width: 50px;
+			height: 50px;
+			margin: 15px;
+			float: left;
+			border-radius: 50%;
+			border-width: 0;
+			font-weight: bold;
+			font-size: 15px;
+			margin-bottom: 30px;
+		}
+		button:nth-child(4){
+			font-size: 20px;
+			background-color: #20b2aa;
+		}
+		button:nth-child(8){
+			font-size: 20px;
+			background-color: #ffa500;
+		}
+		button:nth-child(12){
+			font-size: 20px;
+			background-color: #f08080;
+		}
+		button:nth-child(16){
+			font-size: 20px;
+			background-color: #7d93e0;
+		}
+		button:nth-child(20){
+			font-size: 20px;
+			background-color: #9477af;
+		}
+	</style>
+</head>
+<body>
+	<div>
+    	<h2 class="secondhead"> Pricing details of our website </h2>
+    	<p class="para1"> Here you can estimate the cost that will be charged for using our website by using our calculator displayed below. We care for your money. We charge a little amount for using our website. Our price  charging rules are very simple. We charge for how many hours you use our website. For each one hour we charge about $10 dollars an hour. If you are a frequent user and visit our website frequently, the charging amount drastically drops to a very low of $5 dollars an hour. If you visit our website three a day, you will be converted from normal user to super user of our website, so that the price charged will 	be very less.  Please use our calculator below to estimate the amount you may be charged.  </p>
+	</div>
+
+	<h3 class="calculate"> Calculator </h3>
+	<div id="container">
+		<div id="calculator">
+			<div id="keyboard">
+				<button class="operator" id="clear">C</button>
+				<button class="operator" id="backspace">CE</button>
+				<button class="operator" id="%">%</button>
+				<button class="operator" id="/">&#247;</button>
+				<button class="number" id="7">7</button>
+				<button class="number" id="8">8</button>
+				<button class="number" id="9">9</button>
+				<button class="operator" id="*">&times;</button>
+				<button class="number" id="4">4</button>
+				<button class="number" id="5">5</button>
+				<button class="number" id="6">6</button>
+				<button class="operator" id="-">-</button>
+				<button class="number" id="1">1</button>
+				<button class="number" id="2">2</button>
+				<button class="number" id="3">3</button>
+				<button class="operator" id="+">+</button>
+				<button class="number" id="00">00</button>
+				<button class="number" id="0">0</button>
+				<button class="operator" id="empty">.</button>
+				<button class="operator" id="=">=</button>
+			</div>  
+		</div>
+	</div> 
+</body>
+</html>
